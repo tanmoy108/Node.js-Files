@@ -1,24 +1,10 @@
-const os = require("os");
-const path = require("path");
+const http = require("http");
 const fs = require("fs");
 
-// const mypath = "D:/web/node/node1/index.js";
-// console.log(os.platform());
-// console.log(os.version());
-// console.log(os.cpus());
-// console.log(path.basename(mypath));
-// console.log(path.parse(mypath));
-
-fs.writeFileSync("myfile.txt", "hello world");
-fs.appendFileSync("myfile.txt", " what about you?");
-// const data = fs.readFileSync("myfile.txt");
-// console.log(data); //buffer type
-// console.log(data.toString());
-//sync means synchronous . but recommended asynchronous way.
-
-//Asynchronous way
-fs.readFile("myfile.txt", (err, data) => {
-  console.log(data.toString());
+const a = http.createServer((req, res) => {
+  const read = fs.createReadStream(`${__dirname}/node3/myfile.txt`, "utf-8");
+  read.pipe(res);
 });
 
-console.log("first called because of asyn.");
+a.listen(9000);
+console.log("listening");
