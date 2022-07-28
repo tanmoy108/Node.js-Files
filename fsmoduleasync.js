@@ -14,7 +14,7 @@ readFile("./pathfolder/first.txt", "utf8", (err, result) => {
     const secondread = result;
     writeFile(
       "./pathfolder/thirdasync.txt",
-      `fuck you async ${firstread} ${secondread}`,
+      ` you async ${firstread} ${secondread}`,
       (err, result) => {
         if (err) {
           console.log(err);
