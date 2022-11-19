@@ -1,1 +1,1 @@
-this is promisify : hello  you man hello  you man 2
+this is promisify : this is asynPromise.txt this is asynPromise2.txt . 

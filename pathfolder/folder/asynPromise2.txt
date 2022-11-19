@@ -1,1 +1,1 @@
-hello  you man 2
+this is asynPromise2.txt . 

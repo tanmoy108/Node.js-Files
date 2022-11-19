@@ -5,5 +5,5 @@ const secondread = readFileSync("./pathfolder/second.txt", "utf8");
 
 console.log(firstread, secondread);
 
-writeFileSync('./pathfolder/third.txt',`you bro ${firstread}`);
+writeFileSync('./pathfolder/third.txt',`Hey! ${firstread}`);
 

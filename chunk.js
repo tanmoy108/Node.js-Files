@@ -1,6 +1,6 @@
 // const {writeFileSync} = require("fs");
 
-// for (let i = 0; i <= 10000; i++) {
+// for (let i = 0; i < 10000; i++) {
 //   writeFileSync("./pathfolder/bigdata.txt", `hello bosdk ${i + 1}\n`, {
 //     flag: "a",
 //   });
